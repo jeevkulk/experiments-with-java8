@@ -1,6 +1,5 @@
 package streams;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,18 +7,18 @@ import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
-public class TestPlayingWithWords {
+public class TestConvertToCSV {
 
-    private PlayingWithWords playingWithWords;
+    private ConvertToCSV convertToCSV;
 
     @Before
     public void setup() {
-        playingWithWords = new PlayingWithWords();
+        convertToCSV = new ConvertToCSV();
     }
 
     @Test
     public void testCountWords() {
-        playingWithWords.printWords();
+        convertToCSV.execute();
         Mockito.times(1);
     }
 }
