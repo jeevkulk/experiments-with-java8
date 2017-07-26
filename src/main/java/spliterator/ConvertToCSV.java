@@ -1,4 +1,4 @@
-package streams;
+package spliterator;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

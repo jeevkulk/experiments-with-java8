@@ -1,4 +1,4 @@
-package streams;
+package spliterator;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -7,7 +7,7 @@ import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
-public class TestConvertToCSV {
+public class ConvertToCSVTest {
 
     private ConvertToCSV convertToCSV;
 
