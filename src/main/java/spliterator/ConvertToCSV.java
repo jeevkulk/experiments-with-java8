@@ -24,10 +24,9 @@ public class ConvertToCSV {
             Spliterator<StringBuilder> sbSpliterator = new Spliterator<StringBuilder>() {
                 @Override
                 public boolean tryAdvance(Consumer<? super StringBuilder> action) {
-                    if(wordSpliterator.tryAdvance(str -> sb.append(str).append(","))) {
+                    if (wordSpliterator.tryAdvance(str -> sb.append(str).append(","))) {
                         return true;
-                    }
-                    else {
+                    } else {
                         action.accept(sb);
                         return false;
                     }
