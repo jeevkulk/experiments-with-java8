@@ -34,10 +34,4 @@ public class WordUtilTest {
         wordUtil.findWordsContaining("cat");
         Mockito.times(1);
     }
-
-    @Test
-    public void averageByCountryAndCreditRating() {
-        wordUtil.averageByCountryAndCreditRating();
-        Mockito.times(1);
-    }
 }
