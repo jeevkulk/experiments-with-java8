@@ -7,6 +7,8 @@ import java.nio.channels.FileChannel;
 
 public class FileChannelReader {
 
+    private final String filename = "E:\\technology_workspace\\data\\surnames.csv";
+
     public static void main(String[] args) {
         FileChannelReader fileChannelReader = new FileChannelReader();
         fileChannelReader.readFile();
@@ -14,7 +16,7 @@ public class FileChannelReader {
 
     private void readFile() {
 
-        try(FileInputStream fileInputStream = new FileInputStream("E:\\technology_workspace\\data\\surnames.csv")) {
+        try(FileInputStream fileInputStream = new FileInputStream(filename)) {
 
             FileChannel fileChannel = fileInputStream.getChannel();
             ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
