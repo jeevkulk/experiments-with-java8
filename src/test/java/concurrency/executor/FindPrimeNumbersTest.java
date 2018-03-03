@@ -20,7 +20,17 @@ public class FindPrimeNumbersTest {
                                             .mapToInt(Integer::intValue)
                                             .toArray();
         int[] expectedNumbers = new int[]{1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47};
+        Assert.assertArrayEquals(expectedNumbers, primeNumbers);
+    }
 
+    @Test
+    public void testFindPrimeNumbersExceptionCase() {
+        findPrimeNumbers = new FindPrimeNumbers(1, 50);
+        Set<Integer> primeNumberSet = findPrimeNumbers.getPrimeNumbers();
+        int[] primeNumbers = primeNumberSet.stream()
+                .mapToInt(Integer::intValue)
+                .toArray();
+        int[] expectedNumbers = new int[]{1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47};
         Assert.assertArrayEquals(expectedNumbers, primeNumbers);
     }
 }
