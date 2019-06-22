@@ -1,8 +1,7 @@
-package quiz.io;
+package puzzle.io;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Scanner;
 
 public class MeanCalculator {
